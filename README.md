@@ -322,23 +322,11 @@
     </main>
     
 
-<audio id="sound" autoplay loop preload="auto">
-  <source
-    src="I Love U.mp3"
-    type="audio/mpeg">
+<audio id="sound"
+       src="https://drive.google.com/uc?export=download&id=1Om3pOa8DjeQFlqK_D-uS3TnIC4LbumkQ"
+       type="audio/mpeg"
+       preload="auto">
 </audio>
-
-<script>
-  const sound = document.getElementById("sound");
-
-  sound.volume = 0.7;
-
-  sound.play().catch(() => {
-    document.addEventListener("click", function startMusic() {
-      sound.play();
-    }, { once: true });
-  });
-</script>
 
     <script>
         window.addEventListener('load', () => {
